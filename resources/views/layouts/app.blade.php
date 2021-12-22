@@ -18,7 +18,7 @@
     </head>
     <body class="antialiased">
     <body>
-  <section id="welcome">
+  <section id="app-layout">
     @include('includes.welcome-sidemenu')
     @yield('content')
   </section>

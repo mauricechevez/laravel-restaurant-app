@@ -1,6 +1,6 @@
 
 
-<div class="welcome-menu">
+<div class="side-menu">
     <div class="logo">
       <a href="/"><img src="https://webstockreview.net/images/clipart-restaurant-restaurant-logo-5.png"></a>
     </div>
@@ -10,7 +10,7 @@
       </div>
       <ul class="links">
         <li>
-          <a href="/menu">Menu</a>
+          <a href="/food">Food</a>
         </li>
         <li>
           <a href="/waitlist">Waitlist</a>

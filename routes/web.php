@@ -16,11 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/app', function () {
-    return view('test');
-});
-Route::get('/menu', function () {
-    return view('menu/index');
+
+Route::get('/food', function () {
+    return view('food/index');
 });
 
 Route::get('/waitlist', function() {
