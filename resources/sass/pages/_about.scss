@@ -1,0 +1,29 @@
+#about-page{
+    padding:100px;
+    h1{
+        font-size: 4rem;
+        font-weight: 700;
+        color: black;
+        margin-bottom: 2rem;
+    }
+    .content-box{
+        background-color: #fff;
+        padding:20px;
+        p{
+            font-size: .9rem;
+            line-height: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+        & .about-img{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
