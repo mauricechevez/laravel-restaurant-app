@@ -343,11 +343,13 @@ h2{
   margin-bottom: 3rem;
 }
 
-// Small devices (landscape phones, 576px and up)
+// Small devices
 @media (min-width: 0px) and (max-width: 767px) { 
   #app-layout{
     .side-menu{
-      display: none;
+      // display: block;
+      z-index: 5;
+      transform: translate(-300px);
   }
     .welcome-jumbo{
       transform: translateX(0);
@@ -360,14 +362,130 @@ h2{
 
   #information{
     grid-template-columns: 1fr;
+    grid-template-rows: 200px auto;
+    .info{
+      padding:20px;
+      >h2{
+        margin:2rem 0;
+        line-height: 1.4;
+        font-size: 2rem;
+      }
+      .paragraphs{
+        grid-template-columns: 1fr;
+        p{
+          font-size: 1rem;
+        }
+      }
+      .about-link{
+        width:300px;
+        span{
+          margin-right: 20px;
+          line-height: 1.4;
+        }
+        .circle-right i{
+          transform: translate3d(1px,1px,0);
+        }
+      }
+    }
   }
- 
+  #food-preview{
+    padding:20px;
+    >h2{
+      font-size: 2rem;
+      margin:2rem 0;
+      line-height: 1.4;
+    }
+    a.button-rounded{
+      margin-bottom: 2.8rem;
+    }
+    .container{
+      .left-btn{
+        left:-20px;
+      }
+      .right-btn{
+        right:-20px;
+      }
+      .food-slider{
+        .slide{
+          width: 100%;
+          .content{
+            padding:35px;
+            .food-title{
+              margin:2rem 0;
+            }
+            p.food-description{
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
 
 }
 
 // Medium devices (tablets (like ipad), 768px and up)
 @media (min-width: 768px) { 
+  #information{
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px auto;
+    .info{
+      padding:40px;
+      >h2{
+        margin:2rem 0;
+        line-height: 1.4;
+        font-size: 2rem;
+      }
+      .paragraphs{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+      }
+      .about-link{
+        margin-bottom: 20px;
+        span{
+          margin-right: 40px;
+          line-height: 1.4;
+        }
+        .circle-right i{
+          transform: translate3d(1px,1px,0);
+        }
+      }
+    }
+  }
 
+  #food-preview{
+    padding:20px;
+    >h2{
+      font-size: 2rem;
+      margin:3rem 0;
+      line-height: 1.4;
+    }
+    a.button-rounded{
+      margin-bottom: 4rem;
+    }
+    .container{
+      .left-btn{
+        left:-20px;
+      }
+      .right-btn{
+        right:-20px;
+      }
+      .food-slider{
+        .slide{
+          width: 50%;
+          .content{
+            padding:35px;
+            .food-title{
+              margin:2rem 0;
+            }
+            p.food-description{
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
 
 }
 
