@@ -17,8 +17,11 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/food', function () {
+Route::get('/menu', function () {
     return view('food/index');
+});
+Route::get('/menu/{item}', function () {
+    return view('food/single-menu');
 });
 
 Route::get('/waitlist', function() {
