@@ -248,6 +248,119 @@ table {
     display: block;
   }
 }
+#offer-page {
+  padding: 100px;
+}
+#offer-page h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 2rem;
+}
+#offer-page .content-box .container.deal-container {
+  max-width: 800px;
+  width: 100%;
+}
+#offer-page .content-box p {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+#offer-page .content-box form .row-1, #offer-page .content-box form .row-2 {
+  margin-bottom: 1.5rem;
+}
+#offer-page .content-box form .firstname-container, #offer-page .content-box form .lastname-container, #offer-page .content-box form .phone-container, #offer-page .content-box form .email-container {
+  width: 90%;
+}
+#offer-page .content-box form .firstname-container, #offer-page .content-box form .email-container {
+  margin-right: 10px;
+}
+#offer-page .content-box form input {
+  border: #6e0000 2px solid;
+}
+#offer-page .content-box form label {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+#offer-page .content-box form select {
+  font-size: 1.2rem;
+  border: #6e0000 2px solid;
+}
+#offer-page .content-box form button[type=submit] {
+  padding: 20px 25px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  background-color: #9c1b24;
+  border: none;
+}
+#offer-page .content-box form .confirmation {
+  display: flex;
+  justify-content: space-between;
+}
+#offer-page .content-box form .confirmation .acknowledgement {
+  margin-right: 10px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #app-layout .side-menu {
+    z-index: 5;
+    transform: translate(-300px);
+  }
+  #app-layout #offer-page {
+    padding: 20px;
+  }
+  #app-layout #offer-page h1 {
+    font-size: 2rem;
+  }
+  #app-layout #offer-page .content-box {
+    transform: translateX(0) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  #app-layout #offer-page .content-box .container.deal-container form .row-1, #app-layout #offer-page .content-box .container.deal-container form .row-2 {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  #app-layout #offer-page .content-box .container.deal-container form .row-1 .firstname-container, #app-layout #offer-page .content-box .container.deal-container form .row-1 .lastname-container, #app-layout #offer-page .content-box .container.deal-container form .row-1 .email-container, #app-layout #offer-page .content-box .container.deal-container form .row-1 .phone-container, #app-layout #offer-page .content-box .container.deal-container form .row-2 .firstname-container, #app-layout #offer-page .content-box .container.deal-container form .row-2 .lastname-container, #app-layout #offer-page .content-box .container.deal-container form .row-2 .email-container, #app-layout #offer-page .content-box .container.deal-container form .row-2 .phone-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #app-layout #offer-page .content-box .container.deal-container form .confirmation {
+    justify-content: center;
+    flex-direction: column;
+  }
+  #app-layout #offer-page .content-box .container.deal-container form .confirmation .acknowledgement, #app-layout #offer-page .content-box .container.deal-container form .confirmation .button {
+    width: 100% !important;
+  }
+  #app-layout #offer-page .content-box .container.deal-container form .confirmation button[type=submit] {
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #app-layout .side-menu {
+    z-index: 5;
+    transform: translate(-300px);
+  }
+  #app-layout #offer-page {
+    padding: 20px;
+  }
+  #app-layout #offer-page .content-box {
+    transform: translateX(0);
+    width: 100%;
+    max-width: 100%;
+    overflow-y: scroll;
+    padding: 20px;
+  }
+  #app-layout #offer-page .content-box h1 {
+    font-size: 2rem;
+  }
+  #app-layout #offer-page .content-box .about-img {
+    display: block;
+  }
+}
 body {
   line-height: 1;
   background: white;
