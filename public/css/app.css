@@ -115,12 +115,6 @@ table {
   margin-bottom: 2rem;
   font-weight: 600;
 }
-#about-page .content-box .about-img {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 #about-page .content-box .about-img img {
   max-width: 100%;
   height: auto;
@@ -139,13 +133,34 @@ table {
     padding: 50px;
   }
   #app-layout #content-section {
-    transform: translateX(0) !important;
-    width: 100% !important;
-    max-width: 100% !important;
+    transform: translateX(0);
+    width: 100%;
+    max-width: 100%;
     flex-direction: column;
     background: #ed4852;
     background: radial-gradient(ellipse at center, #ed4852 0%, #9c1b24 100%);
-    overflow: hidden;
+    overflow-y: scroll;
+  }
+  #app-layout #content-section #about-page {
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #app-layout .side-menu {
+    z-index: 5;
+    transform: translate(-300px);
+  }
+  #app-layout #content-section {
+    transform: translateX(0) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-y: scroll;
+  }
+  #app-layout #content-section #about-page {
+    padding: 20px;
+  }
+  #app-layout #content-section .about-img {
+    display: block;
   }
 }
 body {
@@ -524,7 +539,15 @@ h2 {
     margin-bottom: 1.5rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  #app-layout .welcome-jumbo {
+    transform: translateX(0);
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    padding: 50px;
+  }
+
   #information {
     grid-template-columns: 1fr;
     grid-template-rows: 400px auto;
@@ -580,5 +603,15 @@ h2 {
   }
   #food-preview .container .food-slider .slide .content p.food-description {
     margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  #app-layout .side-menu {
+    transform: translate(0);
+  }
+}
+@media (min-width: 1200px) {
+  #app-layout .side-menu {
+    transform: translate(0);
   }
 }
