@@ -105,10 +105,6 @@ table {
   color: black;
   margin-bottom: 2rem;
 }
-#about-page .content-box {
-  background-color: #fff;
-  padding: 20px;
-}
 #about-page .content-box p {
   font-size: 0.9rem;
   line-height: 2rem;
@@ -158,6 +154,95 @@ table {
   }
   #app-layout #content-section #about-page {
     padding: 20px;
+  }
+  #app-layout #content-section .about-img {
+    display: block;
+  }
+}
+#waitlist-page {
+  padding: 100px;
+}
+#waitlist-page h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 2rem;
+}
+#waitlist-page .content-box p {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+#waitlist-page .content-box .about-img img {
+  max-width: 100%;
+  height: auto;
+}
+#waitlist-page .content-box form .firstname-container, #waitlist-page .content-box form .lastname-container {
+  width: 90%;
+}
+#waitlist-page .content-box form .firstname-container {
+  margin-right: 10px;
+}
+#waitlist-page .content-box form input {
+  border: #6e0000 2px solid;
+}
+#waitlist-page .content-box form label {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+#waitlist-page .content-box form select {
+  font-size: 1.2rem;
+  border: #6e0000 2px solid;
+}
+#waitlist-page .content-box form button[type=submit] {
+  padding: 20px 25px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  background-color: #9c1b24;
+  border: none;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #app-layout .side-menu {
+    z-index: 5;
+    transform: translate(-300px);
+  }
+  #app-layout #content-section {
+    transform: translateX(0) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-direction: column;
+    background: #ed4852;
+    background: radial-gradient(ellipse at center, #ed4852 0%, #9c1b24 100%);
+    overflow-y: scroll;
+  }
+  #app-layout #content-section #waitlist-page {
+    padding: 20px;
+  }
+  #app-layout #content-section #waitlist-page h1 {
+    font-size: 2.5rem;
+  }
+  #app-layout #content-section #waitlist-page button[type=submit] {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #app-layout .side-menu {
+    z-index: 5;
+    transform: translate(-300px);
+  }
+  #app-layout #content-section {
+    transform: translateX(0) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-y: scroll;
+  }
+  #app-layout #content-section #waitlist-page {
+    padding: 20px;
+  }
+  #app-layout #content-section #waitlist-page h1 {
+    font-size: 2.5rem;
   }
   #app-layout #content-section .about-img {
     display: block;
@@ -465,6 +550,11 @@ h2 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 3rem;
+}
+
+.content-box {
+  background-color: #fff;
+  padding: 20px;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
