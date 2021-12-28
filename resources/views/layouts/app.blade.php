@@ -23,9 +23,6 @@
     </section>
   </section>
 
-  <!-- <script src="/js/dist/vendors~FirstComp.js"></script>
-  <script src="/js/dist/FirstComp.js"></script>
-  <script src="/js/dist/main.js"></script> -->
 </body>
     </body>
 </html>
