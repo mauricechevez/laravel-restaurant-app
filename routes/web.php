@@ -26,6 +26,22 @@ Route::get('/admin/register', function(){
 Route::get('/admin/login', function(){
     return view('admin/login');
 });
+Route::get('/admin/categories/all', function(){
+    return view('admin/categories/all');
+});
+Route::get('/admin/categories/create', function(){
+    return view('admin/categories/create');
+});
+Route::get('/admin/categories/{id}/edit', function(){
+    return view('admin/categories/edit');
+});
+
+// ***** Food Items *****
+Route::get('/admin/food-items', function(){
+    return view('admin/food-items/all');
+});
+
+
 Route::get('/menu', function () {
     return view('food/index');
 });
