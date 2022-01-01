@@ -1,3 +1,5 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 // @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 @import "reset";
 @import "home";
@@ -6,7 +8,11 @@
 @import "pages/offers";
 @import "menu/index";
 @import "menu/single-menu";
+// Variables
+@import 'variables';
 
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
 
 body {
   line-height: 1;
@@ -533,3 +539,5 @@ h2{
 
 
 // }
+
+

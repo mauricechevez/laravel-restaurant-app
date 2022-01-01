@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\CategoriesController;
 use App\Http\Controllers\admin\FoodItemsController;
 use App\Http\Controllers\admin\CustomersController;
+use App\Http\Controllers\admin\UsersController;
 use App\Http\Controllers\StaticPagesController;
 
 
@@ -21,7 +22,7 @@ use App\Http\Controllers\StaticPagesController;
 
 // Home Page
 Route::get('/', function () {
-    return view('home');
+    return view('landing-page');
 });
 
 // Admin Dashboard
@@ -51,6 +52,12 @@ Route::get('/admin/food-items/create', [FoodItemsController::class,'createFoodIt
 Route::get('/admin/customers/offers-members', [CustomersController::class,'allOffersMembers'] );
 Route::get('/admin/customers/reservations', [CustomersController::class,'allReservations'] );
 
+// Admin Users Section
+Route::get('/admin/users',[UsersController::class,'allUsers']);
+Route::get('/admin/users/create',[UsersController::class,'createUsers']);
+Route::get('/admin/users/{id}/edit',[UsersController::class,'editUsers']);
+
+
 // Static Pages
 Route::get('/menu', function () {
     return view('food/index');
@@ -62,3 +69,7 @@ Route::get('/reservations',[StaticPagesController::class,'reservations'] );
 Route::get('/contact',[StaticPagesController::class,'contact'] );
 Route::get('/offers',[StaticPagesController::class,'offers']);
 Route::get('/about', [StaticPagesController::class,'about']);
+Auth::routes();
+
+// Auth
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
