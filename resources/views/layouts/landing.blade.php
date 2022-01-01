@@ -8,7 +8,6 @@
         <title>Food Circles - Burgers and More</title>
         <link rel="stylesheet" href="/css/app.css">
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
     </head>
     <body class="antialiased">

@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\admin\CategoriesController;
+use App\Http\Controllers\admin\FoodItemsController;
+use App\Http\Controllers\StaticPagesController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,56 +17,42 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Home Page
 Route::get('/', function () {
     return view('home');
 });
 
+// Admin Dashboard
 Route::get('/admin', function(){
     return view('admin/dashboard');
 });
+
+// Admin Authentication
 Route::get('/admin/register', function(){
     return view('admin/register');
 });
 Route::get('/admin/login', function(){
     return view('admin/login');
 });
-Route::get('/admin/categories/all', function(){
-    return view('admin/categories/all');
-});
-Route::get('/admin/categories/create', function(){
-    return view('admin/categories/create');
-});
-Route::get('/admin/categories/{id}/edit', function(){
-    return view('admin/categories/edit');
-});
 
-// ***** Food Items *****
-Route::get('/admin/food-items', function(){
-    return view('admin/food-items/all');
-});
+// Admin Food Categories
+Route::get('/admin/categories/all', [CategoriesController::class,'allCategories']);
+Route::get('/admin/categories/create', [CategoriesController::class,'createCategory']);
+Route::get('/admin/categories/{id}/edit',[CategoriesController::class,'editCategory']);
 
+// All Food Items
+Route::get('/admin/food-items', [FoodItemsController::class,'allFoodItems']);
+Route::get('/admin/food-items/{item}/edit', [FoodItemsController::class,'editFoodItems'] );
+Route::get('/admin/food-items/create', [FoodItemsController::class,'createFoodItems'] );
 
+// Static Pages
 Route::get('/menu', function () {
     return view('food/index');
 });
 Route::get('/menu/{item}', function () {
     return view('food/single-menu');
 });
-
-Route::get('/waitlist', function() {
-    return view('pages/waitlist');
-});
-
-Route::get('/contact', function () {
-    return view('pages/contact');
-});
-
-Route::get('/giftcards', function(){
-    return view('pages/giftcards');
-});
-Route::get('/offers', function(){
-    return view('pages/offers');
-});
-Route::get('/about', function(){
-    return view('pages/about');
-});
+Route::get('/waitlist',[StaticPagesController::class,'waitlist'] );
+Route::get('/contact',[StaticPagesController::class,'contact'] );
+Route::get('/offers',[StaticPagesController::class,'offers']);
+Route::get('/about', [StaticPagesController::class,'about']);

@@ -65,3 +65,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # laravel-restaurant-app
+
+
+# Commands
+`php artisan make:controller ControlerNameHere` Helps create the Controller. By default controllers are stored in `app/Http/Controllers`. To create a new folder within this directory, I can add it to the command as follows: `php artisan make:controller admin/CategoriesController`. This creates a folder called 'admin' and the controller file underneath that called 'CategoriesController' which I will place the route logic for the Food Categories.
+
+**In the routes file** link the route to the new function in your controller:
+```js
+Route::get('/admin/categories/all', 'admin\CategoriesController@index');
+```
