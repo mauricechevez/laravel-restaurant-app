@@ -13,7 +13,7 @@
           <a href="/menu">Fod</a>
         </li>
         <li>
-          <a href="/waitlist">Waitlist</a>
+          <a href="/reservations">Reservations</a>
         </li>
         <li>
           <a href="/offers">Offers</a>

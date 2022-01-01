@@ -48,14 +48,21 @@
                                 <label for="time-amount">Reservation Time</label>
                                 <select class="form-select" aria-label="time" id="timet-input" name="time">
                                     <option>Select a Time</option>
-                                    <option value="4">4pm</option>
-                                    <option value="5">5pm</option>
-                                    <option value="6">6pm</option>
-                                    <option value="7">7pm</option>
-                                    <option value="8">8pm</option>
-                                    <option value="9">9pm</option>
-                                    <option value="10">10pm</option>
-                                    <option value="11">11pm</option>
+                                    <option value="4:00">4:00 PM</option>
+                                    <option value="4:30">4:30 PM</option>
+                                    <option value="5:00">5:00 PM</option>
+                                    <option value="5:30">5:30 PM</option>
+                                    <option value="6:00">6:00 PM</option>
+                                    <option value="6:30">6:30 PM</option>
+                                    <option value="7:00">7:00 PM</option>
+                                    <option value="7:30">7:30 PM</option>
+                                    <option value="8:00">8:00 PM</option>
+                                    <option value="8:30">8:30 PM</option>
+                                    <option value="9:00">9:00 PM</option>
+                                    <option value="9:30">9:30 PM</option>
+                                    <option value="10:00">10:00 PM</option>
+                                    <option value="10:30">10:30 PM</option>
+                                    <option value="11">11 PM</option>
                                 </select>
                             </div>
                         </div>
