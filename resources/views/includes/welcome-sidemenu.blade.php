@@ -10,7 +10,7 @@
       </div>
       <ul class="links">
         <li>
-          <a href="/menu">Fod</a>
+          <a href="/menu">Food</a>
         </li>
         <li>
           <a href="/reservations">Reservations</a>

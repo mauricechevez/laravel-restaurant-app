@@ -39,7 +39,7 @@
         @csrf
         <div class="card">
             <div class="card-header">
-                <h3 class="mb-1">Registrations Form</h3>
+                <h3 class="mb-1">Registration Form</h3>
                 <p>Please enter your user information.</p>
             </div>
             <div class="card-body">                   
@@ -90,7 +90,7 @@
                 
             </div>
             <div class="card-footer bg-white">
-                <p>Already member? <a href="#" class="text-secondary">Login Here.</a></p>
+                <p>Already member? <a href="/login" class="text-secondary">Login Here.</a></p>
             </div>
         </div>
     </form>

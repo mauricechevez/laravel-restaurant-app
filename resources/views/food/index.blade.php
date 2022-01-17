@@ -1,5 +1,5 @@
 @extends('layouts.main-app')
-
+@section('title', 'Menu')
 @section('content')
     <div id="menu-page">
         <h1>We have everything you need to kill your hunger</h1>

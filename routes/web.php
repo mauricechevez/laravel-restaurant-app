@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\admin\CategoriesController;
 use App\Http\Controllers\admin\FoodItemsController;
 use App\Http\Controllers\admin\CustomersController;
@@ -26,9 +27,7 @@ Route::get('/', function () {
 });
 
 // Admin Dashboard
-Route::get('/admin', function(){
-    return view('admin/dashboard');
-});
+Route::get('/admin', [AdminController::class,'adminHomePage']);
 
 // Admin Authentication
 Route::get('/admin/register', function(){

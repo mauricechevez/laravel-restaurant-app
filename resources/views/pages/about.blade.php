@@ -1,4 +1,5 @@
 @extends('layouts.main-app')
+@section('title', 'About Us')
 
 @section('content')
     <div id="about-page">

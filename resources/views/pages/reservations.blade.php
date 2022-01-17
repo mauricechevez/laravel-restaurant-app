@@ -1,4 +1,5 @@
 @extends('layouts.main-app')
+@section('title', 'Reservations')
 
 @section('content')
     <div id="waitlist-page">

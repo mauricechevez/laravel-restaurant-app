@@ -1,11 +1,11 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-// @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 @import "reset";
 @import "home";
 @import "pages/about";
 @import "pages/waitlist";
 @import "pages/offers";
+@import "pages/contact";
 @import "menu/index";
 @import "menu/single-menu";
 // Variables
@@ -15,7 +15,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 body {
-  line-height: 1;
+  // line-height: 1;
   background: white;
 }
 
@@ -87,7 +87,7 @@ p{
       .links{
         li{
           a{
-            font-family: cursive !important;
+            font-family: 'Roboto' !important;
             font-size: 1.1rem;
             color: black;
             font-weight: 700;
@@ -134,6 +134,7 @@ p{
           font-size: 2rem;
           font-weight: 700;
           text-decoration: none;
+          font-family: 'Roboto', sans-serif;
         }
       }
     }
